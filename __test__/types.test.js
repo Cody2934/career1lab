@@ -87,8 +87,7 @@ describe('validator module', () => {
 
         it('can cast values to a boolean', () => {
             expect(castToBoolean(1)).toEqual(true);
-            // expect(castToBoolean(0)).toEqual(true);
-            expect(castToBoolean(2)).toThrowErrorMatchingSnapshot;
+            expect(castToBoolean(0)).toEqual(false);
             expect(castToBoolean(true)).toEqual(true);
             expect(castToBoolean(false)).toEqual(false);
         });
@@ -99,20 +98,21 @@ describe('validator module', () => {
         });
 
         it('throws if value is not castable to string', () => {
-            expect(() => castToString('hi')).toThrowErrorMatchingSnapshot();
             expect(() => castToString({})).toThrowErrorMatchingSnapshot();
         });
 
         it('throws if value is not castable to boolean', () => {
             expect(() => castToBoolean('hi')).toThrowErrorMatchingSnapshot();
             expect(() => castToBoolean({})).toThrowErrorMatchingSnapshot();
+            expect(() => castToBoolean(2)).toThrowErrorMatchingSnapshot();
+
         });
     });
   
     it('can get the right caster', () => {
-        expect(getCaster(Number)).toEqual(castToNumber);
         expect(getCaster(Promise)).toBeNull();
-        expect(getCaster(String)).toBeEqual(castToString);
-        expect(getCaster(Boolean)).toBeEqual(castToBoolean);
+        expect(getCaster(Number)).toEqual(castToNumber);
+        expect(getCaster(String)).toEqual(castToString);
+        expect(getCaster(Boolean)).toEqual(castToBoolean);
     });
 });
