@@ -1,6 +1,7 @@
-language: "node_js"
-node_js: "stable"
-before_script:
-  - npm i eslint esm jsdom
+language: node_js
+node_js:
+  - "9"
+
 script:
-  - npx eslint .
+  - npm run lint
+  - npm test
