@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1583942115034" clover="3.2.0">
-  <project timestamp="1583942115034" name="All files">
-    <metrics statements="14" coveredstatements="14" conditionals="2" coveredconditionals="2" methods="4" coveredmethods="4" elements="20" coveredelements="20" complexity="0" loc="14" ncloc="14" packages="1" files="1" classes="1"/>
+<coverage generated="1583973256068" clover="3.2.0">
+  <project timestamp="1583973256068" name="All files">
+    <metrics statements="32" coveredstatements="32" conditionals="2" coveredconditionals="2" methods="15" coveredmethods="15" elements="49" coveredelements="49" complexity="0" loc="32" ncloc="32" packages="1" files="2" classes="2"/>
     <file name="Schema.js" path="/Users/codybrown/alchemy/career-track/career1lab/lib/Schema.js">
       <metrics statements="14" coveredstatements="14" conditionals="2" coveredconditionals="2" methods="4" coveredmethods="4"/>
       <line num="1" count="1" type="stmt"/>
@@ -18,6 +18,27 @@
       <line num="19" count="2" type="cond" truecount="2" falsecount="0"/>
       <line num="20" count="1" type="stmt"/>
       <line num="22" count="1" type="stmt"/>
+    </file>
+    <file name="file-system.js" path="/Users/codybrown/alchemy/career-track/career1lab/lib/file-system.js">
+      <metrics statements="18" coveredstatements="18" conditionals="0" coveredconditionals="0" methods="11" coveredmethods="11"/>
+      <line num="1" count="1" type="stmt"/>
+      <line num="3" count="1" type="stmt"/>
+      <line num="4" count="1" type="stmt"/>
+      <line num="7" count="1" type="stmt"/>
+      <line num="8" count="2" type="stmt"/>
+      <line num="9" count="2" type="stmt"/>
+      <line num="12" count="1" type="stmt"/>
+      <line num="13" count="4" type="stmt"/>
+      <line num="14" count="4" type="stmt"/>
+      <line num="17" count="1" type="stmt"/>
+      <line num="18" count="1" type="stmt"/>
+      <line num="20" count="2" type="stmt"/>
+      <line num="24" count="1" type="stmt"/>
+      <line num="25" count="1" type="stmt"/>
+      <line num="27" count="1" type="stmt"/>
+      <line num="28" count="1" type="stmt"/>
+      <line num="32" count="1" type="stmt"/>
+      <line num="34" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>
